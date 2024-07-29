@@ -3,7 +3,7 @@ import { createContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const initialUsers = [
-  { email: 'samahzein@gmail.com', password: 'password123', name: "Samah Zein" },
+  { email: 'samahzein@gmail.com', password: 'password123', name: "samah" },
   { email: 'user2@example.com', password: 'password456', name: "sos" },
 ];
 

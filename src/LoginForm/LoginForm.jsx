@@ -18,9 +18,10 @@ const LoginForm = () => {
   const { users, setUserInfo } = useContext(AuthContext);
   const navigate = useNavigate();
   useEffect(()=>{
-    if(window.location.pathname==="login"){
-    localStorage.clear()}
-  })
+   if (localStorage.getItem("Email")) {
+    navigate("/");
+   }
+  }, []);
 
   return (
     <div className="container">

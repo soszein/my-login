@@ -15,11 +15,9 @@ const WelcomePage = () => {
   }, [navigate]);
 
   const HandleLogOut =()=>{
-    localStorage.clear()
-    setTimeout( ()=>{
-      navigate('/login');
-    },500)
-  }
+    localStorage.removeItem("Email");
+    navigate("/login");
+  };
   return (
     <>
       {userInfo.name && (
